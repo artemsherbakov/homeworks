@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <style>
-        input{
-            width: 350px; height: 45px;
-        }
-        body{
-            font-family:Arial, Helvetica, sans-serif
-        }
-    </style>
-    <h1 style="text-align: center;">Login | <span style="color: green;">Register</span></h1> 
-    <h3 style="text-align: center; color: rgb(77, 77, 77);">Enter your email and password to register.</h3>
-    <form action="#" style="display: flex;  align-items: center; flex-direction: column; gap: 15px;">
+    <h1 >Login <span class="middle">|</span> <span class="second">Register</span></h1> 
+    <h3 class="enter">Enter your email and password to register.</h3>
+    <form action="#">
         <!-- <label for="name"><b>Username:</b></label> -->
-        <input type="text" id="name" placeholder="Username">
+        <input type="text" id="username" placeholder="Username">
         
         <!-- <label for="email"><b>Email:</b></label> -->
         <input type="text" id="email" placeholder="Enter your email address">
@@ -56,10 +50,12 @@
                 <option value="poland">Poland</option>
             </optgroup>
         </select> -->
-        <input type="submit" style="color: green; width: 350px; height: 60px;" value="Register">
-        <p style="color: rgb(77, 77, 77);">Or register with</p>
-        <input type="submit"  value="Continue with Google">
-        <input type="submit"  value="Continue with Facebook">
+        <button class="btn1">Register</button>
+        <h3 class="or">Or register with</h3> 
+        <!-- <input type="submit"  value="Continue with Google">
+        <input type="submit"  value="Continue with Facebook"> -->
+        <button class="btn2">Continue with Google</button>
+        <button class="btn3">Continue with Facebook</button>
         </form>
 </body>
 </html>
