@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "CeraPro Regular";
+    src: url("../CeraPro/CeraPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "CeraPro Medium";
+    src: url("../CeraPro/CeraPro-Medium.ttf");
+}
+@font-face {
+    font-family: "CeraPro Bold";
+    src: url("../CeraPro/CeraPro-Bold.ttf");
+}
+@font-face {
+    font-family: "CeraPro Black";
+    src: url("../CeraPro/CeraPro-Black.ttf");
+}
+.container{
+    padding: 30px 120px 52px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
+}
+.menu{
+    display: flex;
+    gap: 50px;
+}
+.menuItem{
+    font-family: "CeraPro Regular", sans-serif;
+    border-bottom: 3px solid transparent;
+    padding: 8px 0 25px;
+}
+
+.active{
+    font-family: "CeraPro Bold", sans-serif;
+    border-color: #46A358;
+}
+.headerbtn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 17px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #fff;
+    font-family: "CeraPro Medium", sans-serif;
+}
+.main{
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subtitle{
+    color: #3D3D3D;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    line-height: 16px; 
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 68px 43px 7px;
+    
+}
+.title{
+    color: #3D3D3D;
+    font-family: "CeraPro Black", sans-serif;
+    font-size: 70px;
+    line-height: 70px; 
+    text-transform: uppercase;
+    padding: 7px 40px 5px ;
+}
+.planet{
+    display: inline-block;
+    color: #46A358;
+    font-family: "CeraPro Black", sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.description{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px 43px 44px;
+}
+.mainbtn{
+    color: #FFF;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 16px;
+    line-height: 20px; 
+    text-transform: uppercase;
+    border-radius: 6px;
+    background: #46A358;
+    padding: 11px 27px;
+    margin-bottom: 85px;
+    margin-left: 41px;
+}
+.flower{
+    width: 518px;
+    height: 470px;
+} 
