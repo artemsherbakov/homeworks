@@ -62,8 +62,8 @@
     line-height: 16px; 
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    padding: 68px 43px 7px;
-    
+    /* padding: 68px 43px 7px; */
+    margin-bottom: 7px;
 }
 .title{
     color: #3D3D3D;
@@ -71,7 +71,8 @@
     font-size: 70px;
     line-height: 70px; 
     text-transform: uppercase;
-    padding: 7px 40px 5px ;
+    /* padding: 7px 40px 5px ; */
+    margin-bottom: 5px;
 }
 .planet{
     display: inline-block;
@@ -86,7 +87,8 @@
     font-family: "CeraPro Regular", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    padding: 5px 43px 44px;
+    /* padding: 5px 43px 44px; */
+    margin-bottom: 44px;
 }
 .mainbtn{
     color: #FFF;
@@ -97,10 +99,13 @@
     border-radius: 6px;
     background: #46A358;
     padding: 11px 27px;
-    margin-bottom: 85px;
-    margin-left: 41px;
+    /* margin-bottom: 85px;
+    margin-left: 41px; */
 }
 .flower{
     width: 518px;
     height: 470px;
 } 
+.divcontent{
+    padding: 68px 40px 85px;
+}
