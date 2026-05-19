@@ -53,10 +53,10 @@
             <img src="./images/01 1.png" alt="flower" class="flower">
         </main>
         <div class="container2">
-            <div>
-                <div class="sidebar">
+            <div class="sidebar">
+                <div class="sidebartop">
                     <h3 class="categories">Categories</h3>
-                    <ul>
+                    <ul class="categorieslist">
                         <li class="categoriesItem active2">House Plants</li>
                         <li class="categoriesItem">Potter Plants</li>
                         <li class="categoriesItem">Seeds</li>
@@ -77,10 +77,15 @@
                         <li class="topbarItem">New Arrivals</li>
                         <li class="topbarItem">Sale</li>
                     </ul>
-                    <span class="sort">
-                        Short by: Default sorting
-                        <img src="./Iconly/Curved/Arrow - Down 2.png" alt="icon">
-                    </span>
+                    <div class="sort">
+                        <span class="shortby">Short by:</span>
+                        <button class="sortingbtn">
+                            Default sorting
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                            <path d="M10.0833 0.75L5.41667 5.41667L0.75 0.75" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="products">
                     <div class="product">
@@ -98,8 +103,8 @@
                         <p class="plantname">African Violet</p>
                         <span class="price">$199.00</span>
                     </div>
-                    <div class="product">
-                        <img src="./images/01 3.png" alt="plant">
+                    <div class="errorcard">
+                        <div class="errorplant"><img class="errorimgplant" src="./images/01 3.png" alt="plant"></div>
                         <p class="plantname">Beach Spider Lily</p>
                         <span class="price">$129.00</span>
                     </div>
@@ -129,16 +134,35 @@
                         <span class="price">$39.00</span>
                     </div>
                 </div>
-
+                <ul class="pagination">
+                    <li><button class="btnpgn activebtn">1</button></li>
+                    <li><button class="btnpgn">2</button></li>
+                    <li><button class="btnpgn">3</button></li>
+                    <li><button class="btnpgn">4</button></li>
+                    <li><button class="btnpgn iconright"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none"><path d="M0.750122 0.750122C0.750122 0.750122 6.00012 3.85812 6.00012 6.00012C6.00012 8.14137 0.750122 11.2501 0.750122 11.2501" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="pagination">
-            <button class="btnpgn activebtn">1</button>
-            <button class="btnpgn">2</button>
-            <button class="btnpgn">3</button>
-            <button class="btnpgn">4</button>
-            <button class="btnpgn iconright"><img src="./Iconly/Curved/Arrow - Right 2.png" alt="icon"></button>
-        </div>
+        <!-- <section class="promo">
+            <div class="promocontent">
+                <img class="promoimg" src="./images/image_7-removebg-preview.png" alt="plant">
+                <div class="promotext">
+                    <h3 class="firsttxt">Summer cactus <br> & succulents</h3>
+                    <p class="secondtxt">We are an online plant shop offering a wide <br> range of cheap and trendy plants</p>
+                    <button class="findmore">Find More <img src="./Iconly/Curved/Arrow - Right.png" alt="icon"></button>
+                </div>
+            </div>
+            <div class="promocontent">
+                <img class="promoimg" src="./images/image_2-removebg-preview.png" alt="plant">
+                <div class="promotext">
+                    <h3 class="firsttxt">Styling Trends <br> & much more</h3>
+                    <p class="secondtxt">We are an online plant shop offering a wide <br> range of cheap and trendy plants</p>
+                    <button class="findmore">Find More <img src="./Iconly/Curved/Arrow - Right.png" alt="icon"></button>
+                </div>
+            </div>
+        </section> -->
     </div>    
 </body>
 </html>

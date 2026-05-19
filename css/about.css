@@ -114,24 +114,34 @@
 
 .container2{
     display: flex;
+    gap: 50px;
+    margin-bottom: 200px;
 }
-
 .sidebar{
     background: #FBFBFB;
-    padding: 14px 175px 377px 18px
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.sidebartop{
+    padding: 14px 18px;
+}
+.categorieslist{
+    padding: 0 12px;
+}
+
 .categoriesItem{
-    padding: 7px 12px;
+    padding: 10px 0px;
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
-    line-height: 40px;
+    
 }
 .active2{
     color: #46A358;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 15px;
-    line-height: 40px; 
+     
 }
 .categories{
     color: #3D3D3D;
@@ -144,7 +154,6 @@
     height: 470px;
 }
 .content{
-    margin-left: 50px;
     flex: 1;
 }
 .topbar{
@@ -173,23 +182,36 @@
     border-color: #46A358;
 }
 .sort{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 8px;
+}
+.shortby, .sortingbtn{
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
-    line-height: 16px; 
 }
-
 .products{
     display: flex;
     flex-wrap: wrap;
-    gap: 140px;
-    margin-top: 40px;
+    gap: 70px 40px;
+    margin: 40px 0 90px;
 }
 .product img{
     background: #FBFBFB;
-    width: 250px;
+    height: 250px;
+}
+.errorcard{
+    min-width: 250px;
+}
+.errorplant{
+    background: #FBFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorimgplant{
     height: 250px;
 }
 .plantname{
@@ -210,6 +232,7 @@
     display: flex;
     justify-content: end;
     gap: 10px;
+    
 }
 .btnpgn{
     border-radius: 4px;
@@ -223,7 +246,31 @@
 .activebtn{
     background: #46A358;
     color: #FFF;
+    min-width: 39px;
 }
 .iconright{
-    padding: 10px 10px;
+    padding: 10px 14px;
+}
+.promo{
+    display: flex;
+    justify-content: space-between;
+}
+.promocontent{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    background: #FBFBFB;
+}
+.promoimg{
+    position: relative;
+    top: -40px;
+}
+.promotext{
+    padding: 37px 30px 46px;
+}
+.promotext h3{
+    margin-bottom: 9px;
+}
+.promotext p{
+    margin-bottom: 25px;
 }
