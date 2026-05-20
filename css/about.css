@@ -19,6 +19,9 @@
     font-family: "CeraPro Light";
     src: url("../CeraPro/CeraPro-Light.ttf");
 }
+button{
+    cursor: pointer;
+}
 .container{
     padding: 30px 120px 52px;
 }
@@ -102,10 +105,19 @@
     background: #46A358;
     padding: 11px 27px;
 }
-.flower{
+.image-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.plantmain{
     width: 518px;
-    height: 470px;
 } 
+.smallplantmain{
+    width: 135px;
+    position: absolute;
+    bottom: 42px;
+    left: 55px;
+}
 .divcontent{
     padding: 68px 40px 85px;
 }
@@ -254,11 +266,12 @@
 .promo{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 138px;
 }
 .promocontent{
     display: flex;
     align-items: center;
-    text-align: end;
+    justify-content: center;
     background: #FBFBFB;
 }
 .promoimg{
@@ -266,11 +279,108 @@
     top: -40px;
 }
 .promotext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-align: end;
     padding: 37px 30px 46px;
 }
 .promotext h3{
+    color: #3D3D3D;
+    text-align: right;
+    font-family: "CeraPro Black", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
     margin-bottom: 9px;
 }
 .promotext p{
+    color: #727272;
+    text-align: right;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
     margin-bottom: 25px;
 }
+.findmore{
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    padding: 11px 28px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.svgfindmore{
+    position: relative;
+    bottom: -2px;
+}
+
+.bloghead{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.bloghead > h3{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 30px;
+}
+.bloghead > p{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+}
+.cardsblog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blogcard{
+    background: #FBFBFB;
+}
+.blogcardtxt{
+    padding: 0 15px;
+}
+.carddate{
+    color: #46A358;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    margin-bottom: 4px;  
+}
+.blogcardtxt > h3{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.cardinfo{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.blogbtn{
+    color: #3D3D3D;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 14px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.activeblogbtn{
+    color: #46A358;
+}
+.blogsvg{
+    position: relative;
+    bottom: -2px;
+}
+
+
+
+
+
