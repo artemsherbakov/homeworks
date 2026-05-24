@@ -210,21 +210,79 @@ button{
     gap: 70px 40px;
     margin: 40px 0 90px;
 }
+.product{
+    border-top: 1px solid transparent;
+}
+.product:hover{
+    border-color: #46A358;
+}
 .product img{
     background: #FBFBFB;
     height: 250px;
 }
 .errorcard{
+    border-top: 1px solid transparent;
     min-width: 250px;
+}
+.errorcard:hover{
+    border-color: #46A358;
 }
 .errorplant{
     background: #FBFBFB;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    min-height: 300px;
 }
 .errorimgplant{
     height: 250px;
+}
+.plantproducts{
+    background: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 300px;
+}
+.btnproducts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 7px;
+}
+.btnproductsItem{
+    padding: 7px;
+    border-radius: 4px;
+    background: #FFF;
+    max-height: 33.98px;
+    display: none;
+}
+.svgbtnpdctsItem{
+    fill: #3D3D3D;
+}
+.btnproductsItem:hover .svgbtnpdctsItem{
+    fill: #46A358;
+}
+.errorplant:hover  .btnproductsItem{
+    display: block;
+}
+.plantproducts:hover  .btnproductsItem{
+    display: block;
+}
+.discountproduct{
+    padding: 6px 8px;
+    background-color: #46A358;
+    color: #FFF;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 14px;
 }
 .plantname{
     color: #3D3D3D;
