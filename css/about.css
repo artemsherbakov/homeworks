@@ -36,16 +36,84 @@ button{
     display: flex;
     gap: 50px;
 }
-.menuItem{
+.menuItems{
     font-family: "CeraPro Regular", sans-serif;
     border-bottom: 3px solid transparent;
     padding: 8px 0 25px;
 }
-
-.active{
-    font-family: "CeraPro Bold", sans-serif;
+.menuItems:hover{
     border-color: #46A358;
+} 
+.menuItems:hover .menuItem{
+    font-family: "CeraPro Bold", sans-serif;
 }
+.activemenuItem{
+    position: relative;
+}
+.menuItemlist{
+    min-width: 188px;
+    position: absolute;
+    top: 100%;
+    left: -57px; 
+    z-index: 1;
+    padding-top: 15px;
+    display: none; 
+}
+.menuItemsublist{
+    padding: 8px 14px;
+    color: #3D3D3D;
+    font-family: "CeraPro Regular",sans-serif;
+    font-size: 16px;
+    background-color: #EDF6EE;
+}
+.activesublist{
+    position: relative;
+}
+.activesublist svg{
+    position: absolute;
+    top: 13px;
+    right: 14px;
+}
+.svgwhitePriming{
+    display: none;
+}
+.svgblackPriming{
+    display: block;
+}
+.activemenuItem:hover  .menuItemlist{
+    display: block;
+}
+.activesublist:hover{
+    background: #1A712A;
+}
+.activesublist:hover .menuItemsubPriming{
+    color: #FFF;
+    font-family: "CeraPro Bold",sans-serif;
+    font-size: 16px;
+}
+.activesublist:hover .svgblackPriming{
+    display: none;
+}
+.activesublist:hover .svgwhitePriming{
+    display: block;
+}
+.menuItemlist2{
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    z-index: 1;
+    min-width: 178px;
+    padding-left: 2px;
+    display: none;
+}
+.menuItemsublist2{
+    background-color: #EDF6EE;
+    padding: 8px 14px;
+}
+.activesublist:hover .menuItemlist2{
+    display: block;
+}
+
 .headerbtn{
     display: flex;
     align-items: center;
