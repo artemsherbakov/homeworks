@@ -19,6 +19,7 @@
     font-family: "CeraPro Light";
     src: url("../CeraPro/CeraPro-Light.ttf");
 }
+
 button{
     cursor: pointer;
 }
@@ -45,7 +46,7 @@ button{
     border-color: #46A358;
 } 
 .menuItems:hover .menuItem{
-    font-family: "CeraPro Bold", sans-serif;
+    text-shadow: 0 0 1px currentColor;
 }
 .activemenuItem{
     position: relative;
@@ -88,8 +89,7 @@ button{
 }
 .activesublist:hover .menuItemsubPriming{
     color: #FFF;
-    font-family: "CeraPro Bold",sans-serif;
-    font-size: 16px;
+    text-shadow: 0 0 1px currentColor;
 }
 .activesublist:hover .svgblackPriming{
     display: none;
@@ -464,6 +464,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .blogcard{
     background: #FBFBFB;
@@ -506,7 +507,171 @@ button{
     bottom: -2px;
 }
 
+.footer{
+    background: #FBFBFB;
+}
+.footerhead{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.headelements{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.headelement1{
+    border-right: rgba(70, 163, 88, 0.10) solid 1px;
+    padding-right: 30px;
+}
+.headelement1 > h3{
+    margin: 15px 0 10px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 17px;
+}
+.headelement1 > p{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+}
+.headelement2{
+    padding-right: 30px;
+    border-right: rgba(70, 163, 88, 0.10) solid 1px;
+}
+.headelement2 > h3{
+    margin: 15px 0 10px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 17px;
+}
+.headelement2 > p{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+}
+.headelement3 > h3{
+    margin: 15px 0 10px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 17px;
+}
+.headelement3 > p{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+.headelements2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.headelements2 > h3{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+}
+.headelements2 > p{
+    color: #727272;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 13px;
+    line-height: 22px; 
+}
+.joinnews{
+    position: relative;
+}
+.joinnews > input{
+    padding: 12px 171px 12px 11px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    color: #ACACAC;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+}
+.joinnews > button{
+    border-radius: 0 6px 6px 0;
+    background: #46A358;
+    color: #FFF;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+    padding: 0 26px;
+    min-height: 41.6px;
+    position: absolute;
+    right: 0;
+}
 
-
-
-
+.footermiddle{
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.middlecontent{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    line-height: 22px;
+}
+.middlecontent > a{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+}
+.footerend{
+    padding: 33px 155px 29px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.20);
+}
+.endinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.endinfo > h3{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+}
+.endcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.endcontent a{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.endsocial{
+    display: flex;
+    gap: 10px;
+}
+.endmedia h3:first-of-type{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold";
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.endsocial{
+    margin-bottom: 33px;
+}
+.endmedia h3:nth-of-type(2){
+    margin-bottom: 13px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+}
+.copyright{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 6px;
+    text-align: center;
+}
