@@ -10,41 +10,53 @@
     font-family: "CeraPro Bold";
     src: url("../CeraPro/CeraPro-Bold.ttf");
 }
-form{
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
+@font-face {
+    font-family: "CeraPro Light";
+    src: url("../CeraPro/CeraPro-Light.ttf");
 }
-input{
-    color: #A5A5A5;
-    font-family: "CeraPro Regular", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    width: 300px; 
-    height: 40px;
-    margin-bottom: 16px;
-    border-radius: 5px;
-    border: 1px solid #EAEAEA;
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
 }
 button{
-    cursor: pointer; 
+    cursor: pointer;
+}
+.container{
+    background-color: #fff;
+    padding: 13px 0 50px;
+    border-bottom: 10px solid #46A358;
+}
+.container2{
+    padding: 0px 100px 0 100px;
+    background-color: #fff;
+}
+.closesvg{
+    padding: 0 13px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 21px;
 }
 h1{
-    font-family: "CeraPro ";
+    color: #3D3D3D;
+    font-family: "CeraPro Medium", sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    margin-top: 52px;
+    line-height: 16px; 
     margin-bottom: 40px;
+    text-align: center;
 }
 .middle{
-    font-family: "Cera Pro";
+    color: #3D3D3D;
+    font-family: "CeraPro Light", sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 250;
+    line-height: 16px; 
+}
+.second{
+    color: #46A358;
+    font-family: "CeraPro Meduim", sans-serif;
+    font-size: 20px;
     line-height: 16px; 
 }
 .enter{
@@ -53,47 +65,87 @@ h1{
     font-size: 13px;
     line-height: 16px; 
     margin-bottom: 14px;
+    padding: 0 9px;
 }
-.or{
-    color: #3D3D3D;
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 41px;
+}
+.container3 > input{
+    color: #A5A5A5;
     font-family: "CeraPro Regular", sans-serif;
-    font-size: 13px;
-    line-height: 16px;
-    margin-bottom: 27px;
-}
-h1, .enter{
-    text-align: center;
-    }
-h1{
-    font-family: "CeraPro Medium", sans-serif;
-}    
-.second {
-    color: #46A358;
-    font-family: "CeraPro Medium", sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 16px; 
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding: 12px 14px;
+    min-width: 300px;
 }
- .btn1{
+.btn1{
     color: #FFF;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 16px;
-    line-height: 16px;
-    width: 300px; 
-    height: 45px;
-    margin-top: 41px;
-    margin-bottom: 36px;
+    line-height: 16px; 
     border-radius: 5px;
     background: #46A358;
-    border-radius: 5px;
+    padding: 16px 119px;
+    margin-bottom: 36px;
 }
-.btn2, .btn3{
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #EAEAEA;
-    width: 300px; 
-    height: 40px;
-    color: #727272;
-    font-family: "CeraPro Medium", sans-serif;
+.container4{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 27px;
+}
+.container4::before,
+.container4::after{
+    content: ' ';
+    flex: 1;
+    border-bottom: 1px solid #EAEAEA;
+}
+.divider{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
     font-size: 13px;
     line-height: 16px; 
 }
+.container5{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #727272;
+    text-align: center;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 13px;
+    line-height: 16px; 
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding: 10px 70px;
+}
+.btn3{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #727272;
+    text-align: center;
+    font-family: "CeraPro Medium", sans-serif;
+    font-size: 13px;
+    line-height: 16px; 
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding: 10px 70px;
+}
+

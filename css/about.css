@@ -23,7 +23,7 @@
 button{
     cursor: pointer;
 }
-.container{
+.boss{
     padding: 30px 120px 52px;
 }
 .header{
@@ -41,6 +41,9 @@ button{
     font-family: "CeraPro Regular", sans-serif;
     border-bottom: 3px solid transparent;
     padding: 8px 0 25px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .menuItems:hover{
     border-color: #46A358;
@@ -69,6 +72,14 @@ button{
 }
 .activesublist{
     position: relative;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.menuItemsubPriming{
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .activesublist svg{
     position: absolute;
@@ -76,10 +87,16 @@ button{
     right: 14px;
 }
 .svgwhitePriming{
-    display: none;
+    opacity: 0;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .svgblackPriming{
-    display: block;
+    opacity: 1;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .activemenuItem:hover  .menuItemlist{
     display: block;
@@ -92,10 +109,10 @@ button{
     text-shadow: 0 0 1px currentColor;
 }
 .activesublist:hover .svgblackPriming{
-    display: none;
+    opacity: 0;
 }
 .activesublist:hover .svgwhitePriming{
-    display: block;
+    opacity: 1;
 }
 .menuItemlist2{
     position: absolute;
@@ -113,6 +130,30 @@ button{
 .activesublist:hover .menuItemlist2{
     display: block;
 }
+.headerbtns{
+    display: flex;
+    gap: 30px;
+}
+.search, .basket{
+    display: flex;
+    align-items: center;
+}
+.basketbtn{
+    position: relative;
+}
+.countorder{
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    background-color: #46A358;
+    min-width: 16px;
+    color: #FFF;
+    font-family: "CeraPro Medium",sans-serif;
+    font-size: 10px;
+    position: absolute;
+    bottom: 12px;
+    right: -6px;
+}
+
 
 .headerbtn{
     display: flex;
@@ -123,6 +164,12 @@ button{
     background: #46A358;
     color: #fff;
     font-family: "CeraPro Medium", sans-serif;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.headerbtn:hover{
+    background-color: #3c8d4d;
 }
 .main{
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
@@ -172,6 +219,12 @@ button{
     border-radius: 6px;
     background: #46A358;
     padding: 11px 27px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.mainbtn:hover{
+    background-color: #3c8d4d;
 }
 .image-wrapper{
     position: relative;
@@ -199,35 +252,239 @@ button{
 }
 .sidebar{
     background: #FBFBFB;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: fit-content;
 }
 .sidebartop{
-    padding: 14px 18px;
+    padding: 14px 24px 19px 18px;
 }
 .categorieslist{
-    padding: 0 12px;
+    padding-left: 12px;
 }
-
 .categoriesItem{
     padding: 10px 0px;
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
-    
+    display: flex;
+    justify-content: space-between;
+}
+.categoriesItem > span{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 15px;
 }
 .active2{
     color: #46A358;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 15px;
-     
+}
+.active2 span{
+    color: #46A358;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 15px;
 }
 .categories{
     color: #3D3D3D;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 18px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.price-filter h3{
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
     line-height: 16px; 
+    margin-top: 36px;
+}
+.price-filtercontent{
+    padding-left: 12px;
+}
+.container{
+  margin-top: 29px;
+}
+
+.slider-labels {
+  margin-top: 10px;
+}
+
+.noUi-target,.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+/* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,.noUi-handle {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background: #46A358;
+  border: 3px solid #FFF;
+}
+
+/* Styling;
+ */
+.noUi-background {
+  background: #bfd8bd;
+}
+
+.noUi-connect {
+  background: #46A358;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53,93,187,0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-origin,[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+.row > p{
+    color: #3D3D3D;
+    font-family: "CeraPro Regular", sans-serif;
+    font-size: 15px;
+    line-height: 16px; 
+    margin-top: 21px;
+}
+#slider-range-value1,
+#slider-range-value2{
+    color: #46A358;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+}
+.tab{
+    color: #46A358;
+}
+.price-filtercontent > button{
+    padding: 8px 26px;
+    margin-top: 16px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 16px;
+    line-height: 20px; 
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.price-filtercontent > button:hover{
+    background-color: #3c8d4d;
+}
+.sidebarend > h3{
+    margin-top: 46px;
+    color: #3D3D3D;
+    font-family: "CeraPro Bold", sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.sidebarendlist{
+    padding-left: 12px;
 }
 .supersale{
     width: 310px;
@@ -272,6 +529,9 @@ button{
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
 }
+.sortingbtn:hover{
+    text-shadow: 0 0 1px currentColor;
+}
 .products{
     display: flex;
     flex-wrap: wrap;
@@ -280,6 +540,9 @@ button{
 }
 .product{
     border-top: 1px solid transparent;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .product:hover{
     border-color: #46A358;
@@ -328,19 +591,25 @@ button{
     border-radius: 4px;
     background: #FFF;
     max-height: 33.98px;
-    display: none;
+    opacity: 0;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .svgbtnpdctsItem{
     fill: #3D3D3D;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .btnproductsItem:hover .svgbtnpdctsItem{
     fill: #46A358;
 }
 .errorplant:hover  .btnproductsItem{
-    display: block;
+    opacity: 1;
 }
 .plantproducts:hover  .btnproductsItem{
-    display: block;
+    opacity: 1;
 }
 .discountproduct{
     padding: 6px 8px;
@@ -380,11 +649,23 @@ button{
     font-family: "CeraPro Light", sans-serif;
     font-size: 18px;
     line-height: 16px; 
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.btnpgn:hover{
+    border-color:#c2c1c1 ;
 }
 .activebtn{
     background: #46A358;
     color: #FFF;
     min-width: 39px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.activebtn:hover{
+    background-color: #3c8d4d;
 }
 .iconright{
     padding: 10px 14px;
@@ -437,6 +718,12 @@ button{
     display: flex;
     align-items: center;
     gap: 5px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.findmore:hover{
+    background-color: #3c8d4d;
 }
 .svgfindmore{
     position: relative;
@@ -498,13 +785,23 @@ button{
     display: flex;
     align-items: center;
     gap: 3px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
-.activeblogbtn{
+.blogbtn:hover{
     color: #46A358;
 }
 .blogsvg{
     position: relative;
     bottom: -2px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    fill: #3D3D3D;
+}
+.blogbtn:hover > .blogsvg{
+    fill: #46A358;
 }
 
 .footer{
@@ -598,8 +895,14 @@ button{
     font-size: 18px;
     padding: 0 26px;
     min-height: 41.6px;
+    transition-duration: 0.25s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
     position: absolute;
     right: 0;
+}
+.joinnews > button:hover{
+    background-color: #3c8d4d;
 }
 
 .footermiddle{
@@ -614,6 +917,12 @@ button{
     align-items: center;
     gap: 9px;
     line-height: 22px;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.middlecontent:hover{
+    text-shadow: 0 0 1px currentColor;
 }
 .middlecontent > a{
     color: #3D3D3D;
@@ -641,6 +950,14 @@ button{
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+.endcontent > li{
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.endcontent > li:hover{
+    text-shadow: 0 0 1px currentColor;
 }
 .endcontent a{
     color: #3D3D3D;
