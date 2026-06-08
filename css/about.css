@@ -260,20 +260,48 @@ button{
 .categorieslist{
     padding-left: 12px;
 }
-.categoriesItem{
+.category-name{
     padding: 10px 0px;
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
+}
+.category-name{
     display: flex;
     justify-content: space-between;
 }
-.categoriesItem > span{
+.category-name > span{
     color: #3D3D3D;
     font-family: "CeraPro Regular", sans-serif;
     font-size: 15px;
 }
-.active2{
+.custom-checkbox{
+    cursor: pointer;
+    user-select: none;
+}
+.custom-checkbox > input{
+    display: none;
+}
+.custom-checkbox > .category-name{
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.custom-checkbox > .category-name > span{
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.custom-checkbox input:checked + .category-name{
+    color: #46A358;
+    text-shadow: 0 0 1px currentColor;
+}
+.custom-checkbox input:checked + .category-name > span{
+    color: #46A358;
+    text-shadow: 0 0 1px currentColor;
+}
+
+/* .active2{
     color: #46A358;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 15px;
@@ -282,7 +310,7 @@ button{
     color: #46A358;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 15px;
-}
+} */
 .categories{
     color: #3D3D3D;
     font-family: "CeraPro Bold", sans-serif;
