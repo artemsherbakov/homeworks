@@ -23,7 +23,7 @@
 button{
     cursor: pointer;
 }
-.boss{
+.container1{
     padding: 30px 120px 52px;
 }
 .header{
@@ -300,17 +300,6 @@ button{
     color: #46A358;
     text-shadow: 0 0 1px currentColor;
 }
-
-/* .active2{
-    color: #46A358;
-    font-family: "CeraPro Bold", sans-serif;
-    font-size: 15px;
-}
-.active2 span{
-    color: #46A358;
-    font-family: "CeraPro Bold", sans-serif;
-    font-size: 15px;
-} */
 .categories{
     color: #3D3D3D;
     font-family: "CeraPro Bold", sans-serif;
@@ -963,12 +952,12 @@ button{
     justify-content: space-between;
     border-bottom: 1px solid rgba(70, 163, 88, 0.20);
 }
-.endinfo{
+.endinfo, .endinfo3{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.endinfo > h3{
+.endinfo > h3, .endinfo3 > h3{
     color: #3D3D3D;
     font-family: "CeraPro Bold", sans-serif;
     font-size: 18px;
@@ -1019,4 +1008,415 @@ button{
     line-height: 30px;
     margin-top: 6px;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .container1{
+        padding: 30px 50px;
+    }
+    .divcontent{
+        padding: 48px 30px 65px;
+    }
+    .main{
+        margin-bottom: 23px;
+    }
+    .container2{
+        margin-bottom: 100px;
+        gap: 50px;
+    }
+    .sidebar{
+        background: #FBFBFB;
+        height: fit-content;
+        max-width: 190px;
+    }
+    .supersale{
+        max-width: 190px;
+        max-height: 300px;
+    }
+    .products{
+        gap: 30px 100px;
+        margin: 20px 0 45px;
+    }
+    .promo{
+        margin-bottom: 90px;
+    }
+    .promotext{
+        padding: 15px;
+    }
+    .cardsblog{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px 80px;
+        margin-bottom: 70px;
+    }
+    .footerhead{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .headelements2{
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container1{
+        padding: 30px 50px;
+    }
+    .menu{
+        gap: 25px;
+    }
+    .headerbtns{
+        gap: 15px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .divcontent{
+        padding: 30px 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .products{
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0 30px;
+        margin: 20px 0 35px;
+    }
+    .promo{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+    .footermiddle{
+        justify-content: space-around;
+        gap: 30px 50px;
+        flex-wrap: wrap;
+    }
+    .footerend{
+        padding: 33px 25px 29px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .container1{
+        padding: 10px 20px;
+    }
+    .header{
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .headerbtns{
+        gap: 12px;
+    }
+    .menu{
+      display: none;  
+    }
+    .divcontent{
+        padding: 12px;
+    }
+    .description{
+        margin-bottom: 26px;
+        font-size: 12px;
+    }
+    .subtitle{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .title{
+        font-size: 40px;
+        margin-bottom: 0;
+        line-height: 40px;
+    }
+    .planet{
+        font-size: 50px;
+    }
+    .mainbtn{
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+    .plantmain{
+        max-width: 400px;
+    }
+    .smallplantmain{
+        max-width: 115px;
+        bottom: 30px;
+        left: 40px;
+    }
+    .tabs{
+        gap: 20px;
+    }
+    .topbarItem{
+        font-size: 12px;
+    }
+    .shortby, .sortingbtn{
+        font-size: 12px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        min-width: 100%;
+        padding: 0;
+    }
+    .promotext{
+        padding: 8px;
+    }
+    .promoimg{
+        max-width: 215px;
+    }
+    .promotext > h3{
+        font-size: 18px;
+    }
+    .footerhead{
+        padding: 10px;
+    }
+    .headelements{
+        gap: 15px;
+    }
+    .headelement1 > h3, .headelement2 > h3, .headelement3 > h3{
+        font-size: 16px;
+    }
+    .headelement1 > p, .headelement2 > p, .headelement3 > p{
+        font-size: 12px;
+    }
+    .headelement3 > p{
+        line-height: 15px;
+    }
+    .footermiddle{
+        padding: 10px;
+        justify-content: center;
+        gap: 15px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .footerend{
+        padding: 10px;
+    }
+    .endinfo3{
+        display: none;
+    }
+    .endinfo > h3{
+        font-size: 14px;
+    }
+    .endcontent a{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .endmedia h3:first-of-type{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .endsocial{
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .endmedia h3:nth-of-type(2){
+        font-size: 14px;
+    }
+    .endmedia > img{
+        max-width: 170px;
+    }
+}
+@media screen and (max-width: 375px){
+    .header > svg{
+        max-width: 120px;
+    }
+    .searchbtn > svg{
+        max-width: 18px;
+    }
+    .basketbtn > svg{
+        max-width: 18px;
+    }
+    .basketbtn > p{
+        font-size: 7px;
+        min-width: 13px;
+    }
+    .headerbtn{
+        font-size: 12px;
+        align-items: center;
+        padding: 6px 15px;
+    }
+    .headerbtn > svg{
+        max-width: 15px;
+    }
+    .subtitle{
+        margin-bottom: 7px;
+    }
+    .title{
+        line-height: 30px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .planet{
+        line-height: 30px;
+        font-size: 30px;
+    }
+    .description{
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .mainbtn{
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+    .plantmain{
+        max-width: 335px;
+    }
+    .smallplantmain{
+        max-width: 85px;
+    }
+    .topbarItem{
+        font-size: 10px;
+    }
+    .tabs{
+        gap: 15px;
+    }
+    .shortby, .sortingbtn{
+        font-size: 10px;
+    }
+    .pagination{
+        gap: 8px;
+    }
+    .btnpgn{
+        padding: 8px 12px;
+    }
+    .activebtn{
+        min-width: 35.89px;
+    }
+    .promoimg{
+        max-width: 165px;
+    }
+    .promotext h3{
+        font-size: 16px;
+    }
+    .promotext p{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .findmore{
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+    .svgfindmore{
+        max-width: 13px;
+    }
+    .joinnews{
+        max-width: 300px;
+    }
+    .joinnews > input{
+        max-width: 300px;
+        padding: 10px 100px 10px 9px;
+    }
+    .joinnews > button{
+        padding: 0px 24px;
+        min-height: 38px;
+    }
+    .headelement1, .headelement2{
+       padding-right: 15px;
+    }
+    .headelement1 > h3, .headelement2 > h3, .headelement3 > h3{
+        font-size: 14px;
+    }
+    .headelement1 > p, .headelement2 > p, .headelement3 > p{
+        font-size: 10px;
+    }
+    .headelements2 > h3{
+        font-size: 14px;
+    }
+    .headelements2 > p{
+        line-height: 17px;
+        font-size: 10px;
+    }
+    .middlecontent > a{
+        font-size: 10px;
+    }
+    .footermiddle > svg{
+        max-width: 120px;
+    }
+    .middlecontent > svg{
+        max-width: 17px;
+    }
+    .middlecontent{
+        line-height: 15px;
+    }
+    .endcontent{
+        gap: 4px;
+    }
+    .endinfo > h3{
+        font-size: 12px;
+    }
+    .endinfo a{
+        font-size: 8px;
+    }
+    .endmedia h3:first-of-type{
+        font-size: 12px;
+    }
+    .endsocial > li > a > svg{
+        max-width: 25px;
+    }
+    .endmedia > img{
+        max-width: 130px;
+    }
+}
+@media screen and (max-width: 320px){
+    .headerbtn{
+        padding: 4px 13px;
+    }
+    .mainbtn{
+        padding: 4px 18px;
+    }
+    .plantmain{
+        max-width: 280px;
+    }
+    .smallplantmain{
+        max-width: 70px;
+        bottom: 25px;
+        left: 35px;
+    }
+    .topbarItem{
+        font-size: 9px;
+        padding-bottom: 4px;
+    }
+    .shortby, .sortingbtn {
+        font-size: 9px;
+    }
+    .sortingbtn > svg{
+        max-width: 8px;
+    }
+    .promoimg {
+        max-width: 130px;
+    }
+    .promotext h3 {
+        font-size: 14px;
+    }
+    .promotext p {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    .findmore {
+        font-size: 12px;
+        padding: 6px 22px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .headelements2 > p {
+        line-height: 15px;
+        font-size: 10px;
+    }
+    .footermiddle {
+        gap: 10px;
+        
+    }
+    .headelements {
+        display: none;
+    }
 }
